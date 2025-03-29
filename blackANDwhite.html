@@ -1,164 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    
+    <title>Heshan Perera</title>
+    <link rel="shortcut icon" href="prof.png" type="image/svg+xml">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Ubuntu+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Ubuntu Mono', monospace;
-            overflow: hidden;
-            background: black;
-            color: white;
-        }
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        .profile-container {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            margin-top: 25vh;
-
-        }
-        .profile-img {
-            width: 190px;
-            height: 190px;
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-        }
-        .social-icons i {
-            font-size: 32px;
-            margin: 10px;
-            color: white;
-            transition: all 0.3s ease;
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
-        }
-        h1, h2, p {
-            margin: 10px 0;
-            color: white;
-        }
-        h2 {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 36px;
-            text-transform: uppercase;
-        }
-        p {
-            font-family: 'Raleway', sans-serif;
-            font-size: 28px;
-            font-weight: 300;
-        }
-        .social-icons a {
-            color: inherit;
-        }
-        .footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.8);
-            font-size: 14px;
-        }
-        .footer a {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="heshan.css">
 </head>
+
 <body>
     <div id="particles-js"></div>
-    <div class="container profile-container">
-        <img src="prof.png" alt="Profile Picture" class="profile-img">
-        <h2>Heshan Perera</h2>
-        <p>Head of CTF | Offensive Security Engineer | Cybersecurity UG</p>
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/rapper" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/0dayCTF" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.hackthebox.eu/" target="_blank">
-                <i><img src="hackthebox.svg" alt="Hack The Box" width="32" height="32"></i>
-            </a>
-            <a href="https://tryhackme.com/" target="_blank">
-                <i><img src="Tryhackme.svg" alt="TryHackMe" width="32" height="32"></i>
-            </a>
+        <div id="profile">
+            <img src="prof.png" alt="Profile Picture" class="profile-img">
+            <h2>Heshan Perera</h2>
+            <p>Head of CTF | Offensive Security Engineer | Cybersecurity UG</p>
+            <div class="social-icons">
+                <a href="http://linkedin.com/in/heshankwperera/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/destinyfkrr/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://app.hackthebox.com/users/1304302" target="_blank">
+                    <i><img src="logo/hackthebox.svg" alt="Hack The Box" width="32" height="32"></i>
+                </a>
+                <a href="https://tryhackme.com/p/dest1ny" target="_blank">
+                    <i><img src="logo/Tryhackme.svg" alt="TryHackMe" width="32" height="32"></i>
+                </a>
+            </div>
         </div>
-    </div>
-    
+
     <footer class="footer">
-        <a href="https://www.linkedin.com/in/menusha-perera-1211ba264/" target="_blank">&copy; 2025 Menusha Perera</a>
+        <a href="https://www.linkedin.com/in/menusha-perera-1211ba264/" target="_blank">&copy; Menusha Perera</a>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 100,
-                    "density": {
-                        "enable": true,
-                        "value_area": 700
-                    }
-                },
-                "color": { "value": "#ffffff" }, 
-                "shape": { "type": "circle" },
-                "opacity": {
-                    "value": 0.7,
-                    "random": true
-                },
-                "size": {
-                    "value": 4,
-                    "random": true
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 140,
-                    "color": "#ffffff",
-                    "opacity": 0.8,
-                    "width": 1.9
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 2.5,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": { "enable": true, "mode": "repulse" },
-                    "onclick": { "enable": true, "mode": "push" },
-                    "resize": true
-                },
-                "modes": {
-                    "repulse": {
-                        "distance": 120,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 5
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
+    <script src="heshan.js"></script>
 </body>
+
 </html>
